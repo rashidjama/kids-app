@@ -1,0 +1,482 @@
+$gradient_dark: #da7415;
+$gradient_light: #fed973;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box !important;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    h1, h2, h3, h4, h5, h6, p, small, li, a, span, div{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box !important;
+        text-decoration: none;
+        list-style: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+// mobile design 
+@media (max-width: 969px) {
+    
+.animals_page{
+    .page_container{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white radial-gradient(circle at top center, $gradient_light, $gradient_dark);
+    }
+    .page_pattern{
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        background-image: url('../images/animal_tracks_white.png');
+        opacity: 0.1;
+    }
+    .page_bottom_pattern{
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        background-image: url('../images/pattern_grass.png');
+    }
+    .page{
+        width: 100%;
+        padding: px;
+        position: relative;
+        z-index: 1;
+    }
+    
+
+
+    
+    // HEADER
+    
+    // first-child
+    .header > div:first-child{
+        width: 100%;
+        height: 82px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: -15px;
+        position: relative;
+        z-index: 2;
+    }
+    .logo_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo_container > a:first-child{
+        display: inline-block;
+        img{
+            height: 44px;
+            width: auto;
+        }
+    }
+    .button_white{
+        display: inline;
+        padding: 8px ;
+        box-shadow:inset -2px -2px 0px 0px #c7c7c7;
+        background:linear-gradient(to bottom, #f8f8f8 5%, #f0f0f0 100%);
+        background-color:#f0f0f0;
+        border-radius:6px;
+        display:inline-block;
+        cursor:pointer;
+        color:#e08312;
+        font-size:16px;
+        font-weight:bold;
+        text-decoration:none;
+        letter-spacing: 0.2px;
+        position: relative;
+        margin-left: 20px;
+    }
+    .button_white:hover {
+        background:linear-gradient(to bottom, #e6e6e6 5%, #f0f0f0 100%);
+        background-color:#e6e6e6;
+    }
+    
+    // last-child 
+    .header > div:last-child{
+        width: 100%;
+        height: 82px;
+        position: relative;
+        img{
+            position: absolute;
+            left: 0;
+            top:0;
+            right: 0;
+            bottom: 0;
+        }
+        div{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            padding-top: 30px;
+            z-index: 1;
+            h3{
+                text-transform: uppercase;
+                color: rgb(255, 216, 132);
+            }
+            p{
+                color: #fff;
+                font-weight: 200;
+                font-size: 12px;
+            }
+        }
+    }
+    
+    
+    
+    // CONTENT
+    .content{
+        width: 100%;
+        margin: auto;
+        height: calc(100vh - 235px);
+        min-height: calc(100vh - 235px);
+        overflow-y: scroll;
+        background-color: #fff;
+    }
+
+      // Animal Cards
+      .animal_number {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+
+        .animal_card {
+            // background-color: black;
+            width: 160px;
+            height: 130px;
+            display: flex;
+            justify-content: flex-end;
+            box-shadow: 0px 2px 3px #000;
+            align-items:flex-end;
+            color: $gradient_dark;
+            margin: 6px;
+            font-size: 10px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            padding: 7px 5px 0;
+            transition: all ease 1s;
+        }
+        .animal_card:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+
+
+    // FOOTER
+    .footer{
+        width: 100%;
+        height: 82px;
+        max-width: 900px;
+        min-width: 900px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+        position: relative;
+    }
+    .tiger{
+        width: 140px;
+        height: auto;
+        position: absolute;
+        right: -160px;
+        bottom: 0;
+    }
+    .footer > div{
+        width: 100%;
+        position: relative;
+        img{
+            position: absolute;
+            left: 0;
+            top:0;
+            right: 0;
+            bottom: 0;
+        }
+        div{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            padding-top: 30px;
+            z-index: 1;
+            a{
+                color: rgb(255, 216, 132);
+                margin-top: 4px;
+                text-decoration: underline;
+            }
+            p{
+                color: #fff;
+                font-weight: 200;
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
+
+}
+// desktop design
+@media (min-width: 970px) {
+
+
+.animals_page{
+    .page_container{
+        width: 100%;
+        min-width: 1000px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white radial-gradient(circle at top center, $gradient_light, $gradient_dark);
+    }
+    .page_pattern{
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        background-image: url('../images/animal_tracks_white.png');
+        opacity: 0.1;
+    }
+    .page_bottom_pattern{
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        background-image: url('../images/pattern_grass.png');
+    }
+    .page{
+        width: 100%;
+        max-width: 900px;
+        min-width: 900px;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+        .monkey{
+            width: 200px;
+            height: auto;
+            position: absolute;
+            left: -220px;
+            top:0;
+        }
+        .sound{
+            width: 120px;
+            height: auto;
+            position: absolute;
+            right: -160px;
+            top:20px;
+            opacity: 0.4;
+        }
+    }
+    
+
+
+    
+    // HEADER
+    
+    // first-child
+    .header > div:first-child{
+        max-width: 800px;
+        height: 82px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: -10px;
+        position: relative;
+        z-index: 2;
+    }
+    .logo_container{
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo_container > a:first-child{
+        display: inline-block;
+        img{
+            height: 74px;
+            width: auto;
+        }
+    }
+    .button_white{
+        display: inline-block;
+        padding: 10px 20px 10px 40px;
+        box-shadow:inset -2px -2px 0px 0px #c7c7c7;
+        background:linear-gradient(to bottom, #f8f8f8 5%, #f0f0f0 100%);
+        background-color:#f0f0f0;
+        border-radius:6px;
+        display:inline-block;
+        cursor:pointer;
+        color:#e08312;
+        font-size:16px;
+        font-weight:bold;
+        text-decoration:none;
+        letter-spacing: 0.4px;
+        position: relative;
+        margin-left: 20px;
+        img{
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+        }
+    }
+    .button_white:hover {
+        background:linear-gradient(to bottom, #e6e6e6 5%, #f0f0f0 100%);
+        background-color:#e6e6e6;
+    }
+    .button_white:active {
+        position:relative;
+        top:1px;
+    }
+    
+    // last-child 
+    .header > div:last-child{
+        width: 100%;
+        height: 82px;
+        position: relative;
+        img{
+            position: absolute;
+            left: 0;
+            top:0;
+            right: 0;
+            bottom: 0;
+        }
+        div{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            padding-top: 30px;
+            z-index: 1;
+            h3{
+                text-transform: uppercase;
+                color: rgb(255, 216, 132);
+            }
+            p{
+                color: #fff;
+                font-weight: 200;
+                font-size: 12px;
+            }
+        }
+    }
+    
+    
+    
+    // CONTENT
+    .content {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        height: calc(100vh - 235px);
+        min-height: calc(100vh - 235px);
+        overflow-y: scroll;
+        background-color: #fff;
+    }
+    // Animal Cards
+    .animal_number {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+
+        .animal_card {
+            // background-color: black;
+            width: 160px;
+            height: 130px;
+            display: flex;
+            justify-content: flex-end;
+            box-shadow: 0px 2px 3px #000;
+            align-items:flex-end;
+            color: $gradient_dark;
+            margin: 6px;
+            font-size: 10px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            padding: 7px 5px 0;
+            transition: all ease 1s;
+        }
+        .animal_card:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+
+    // FOOTER
+    .footer{
+        width: 100%;
+        height: 82px;
+        max-width: 900px;
+        min-width: 900px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+        position: relative;
+    }
+    .tiger{
+        width: 140px;
+        height: auto;
+        position: absolute;
+        right: -160px;
+        bottom: 0;
+    }
+    .footer > div{
+        width: 100%;
+        position: relative;
+        img{
+            position: absolute;
+            left: 0;
+            top:0;
+            right: 0;
+            bottom: 0;
+        }
+        div{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            padding-top: 30px;
+            z-index: 1;
+            a{
+                color: rgb(255, 216, 132);
+                text-decoration: none;
+            }
+            p{
+                color: #fff;
+                font-weight: 200;
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
+
+
+    
+}

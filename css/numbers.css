@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* h1, * h2, * h3, * h4, * h5, * h6, * p, * small, * li, * a, * span, * div {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  text-decoration: none;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
+@media (max-width: 969px) {
+  .numbers_page .page_container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white radial-gradient(circle at top center, #d9f55a, #88a317);
+  }
+  .numbers_page .page_pattern {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/pattern_numbers_white.png");
+    opacity: 0.15;
+  }
+  .numbers_page .page_bottom_pattern {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background-image: url("../images/pattern_baloons.png");
+  }
+  .numbers_page .page {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .numbers_page .header > div:first-child {
+    width: 100%;
+    height: 82px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+  .numbers_page .logo_container {
+    width: 100%;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .numbers_page .logo_container > a:first-child {
+    display: inline-block;
+  }
+  .numbers_page .logo_container > a:first-child img {
+    height: 44px;
+    width: auto;
+  }
+  .numbers_page .button_white {
+    display: inline-block;
+    padding: 5px;
+    -webkit-box-shadow: inset -2px -2px 0px 0px #c7c7c7;
+            box-shadow: inset -2px -2px 0px 0px #c7c7c7;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f8f8f8), to(#f0f0f0));
+    background: linear-gradient(to bottom, #f8f8f8 5%, #f0f0f0 100%);
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #e08312;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    position: relative;
+  }
+  .numbers_page .button_white:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #e6e6e6), to(#f0f0f0));
+    background: linear-gradient(to bottom, #e6e6e6 5%, #f0f0f0 100%);
+    background-color: #e6e6e6;
+  }
+  .numbers_page .button_white:active {
+    position: relative;
+    top: 1px;
+  }
+  .numbers_page .header > div:last-child {
+    width: 100%;
+    height: 82px;
+    position: relative;
+  }
+  .numbers_page .header > div:last-child img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .numbers_page .header > div:last-child div {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    z-index: 1;
+  }
+  .numbers_page .header > div:last-child div h3 {
+    text-transform: uppercase;
+    color: #ffd884;
+  }
+  .numbers_page .header > div:last-child div p {
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+  }
+  .numbers_page .content {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    height: calc(100vh - 235px);
+    min-height: calc(100vh - 235px);
+    overflow-y: scroll;
+    background-color: #fff;
+  }
+  .numbers_page .footer {
+    width: 100%;
+    height: 82px;
+    max-width: 900px;
+    min-width: 900px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 5;
+    position: relative;
+  }
+  .numbers_page .tiger {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    right: -160px;
+    bottom: 0;
+  }
+  .numbers_page .footer > div {
+    width: 100%;
+    position: relative;
+  }
+  .numbers_page .footer > div img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .numbers_page .footer > div div {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    z-index: 1;
+  }
+  .numbers_page .footer > div div a {
+    color: #ffd884;
+    margin-top: 4px;
+    text-decoration: underline;
+  }
+  .numbers_page .footer > div div p {
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 970px) {
+  .numbers_page .page_container {
+    width: 100%;
+    min-width: 1000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white radial-gradient(circle at top center, #d9f55a, #88a317);
+  }
+  .numbers_page .page_pattern {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/pattern_numbers_white.png");
+    opacity: 0.15;
+  }
+  .numbers_page .page_bottom_pattern {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background-image: url("../images/pattern_baloons.png");
+  }
+  .numbers_page .page {
+    width: 100%;
+    max-width: 900px;
+    min-width: 900px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+  }
+  .numbers_page .page .monkey {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    left: -160px;
+    top: 0;
+  }
+  .numbers_page .page .sound {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    right: -160px;
+    top: 20px;
+    opacity: 0.4;
+  }
+  .numbers_page .header > div:first-child {
+    max-width: 800px;
+    height: 82px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 2;
+  }
+  .numbers_page .logo_container {
+    width: 100%;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .numbers_page .logo_container > a:first-child {
+    display: inline-block;
+  }
+  .numbers_page .logo_container > a:first-child img {
+    height: 74px;
+    width: auto;
+  }
+  .numbers_page .button_white {
+    display: inline-block;
+    padding: 10px 20px 10px 40px;
+    -webkit-box-shadow: inset -2px -2px 0px 0px #c7c7c7;
+            box-shadow: inset -2px -2px 0px 0px #c7c7c7;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f8f8f8), to(#f0f0f0));
+    background: linear-gradient(to bottom, #f8f8f8 5%, #f0f0f0 100%);
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #e08312;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.4px;
+    position: relative;
+    margin-left: 20px;
+  }
+  .numbers_page .button_white img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .numbers_page .button_white:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #e6e6e6), to(#f0f0f0));
+    background: linear-gradient(to bottom, #e6e6e6 5%, #f0f0f0 100%);
+    background-color: #e6e6e6;
+  }
+  .numbers_page .button_white:active {
+    position: relative;
+    top: 1px;
+  }
+  .numbers_page .header > div:last-child {
+    width: 100%;
+    height: 82px;
+    position: relative;
+  }
+  .numbers_page .header > div:last-child img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .numbers_page .header > div:last-child div {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    z-index: 1;
+  }
+  .numbers_page .header > div:last-child div h3 {
+    text-transform: uppercase;
+    color: #ffd884;
+  }
+  .numbers_page .header > div:last-child div p {
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+  }
+  .numbers_page .content {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    height: calc(100vh - 235px);
+    min-height: calc(100vh - 235px);
+    overflow-y: scroll;
+    background-color: #fff;
+  }
+  .numbers_page .footer {
+    width: 100%;
+    height: 82px;
+    max-width: 900px;
+    min-width: 900px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 5;
+    position: relative;
+  }
+  .numbers_page .tiger {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    right: -160px;
+    bottom: 0;
+  }
+  .numbers_page .footer > div {
+    width: 100%;
+    position: relative;
+  }
+  .numbers_page .footer > div img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .numbers_page .footer > div div {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    z-index: 1;
+  }
+  .numbers_page .footer > div div a {
+    color: #ffd884;
+    margin-top: 4px;
+    text-decoration: underline;
+  }
+  .numbers_page .footer > div div p {
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+  }
+}
+
+.numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  font-size: 60px;
+  margin: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-shadow: 2px 3px 5px #222;
+          box-shadow: 2px 3px 5px #222;
+  font-family: 'Butterfly Kids', cursive;
+  font-weight: 700;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.number:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #E72B91;
+  background-color: #88a317;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 2px 3px 5px #ffd884;
+          box-shadow: 2px 3px 5px #ffd884;
+}
+
+@media (max-width: 992px) {
+  .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100px;
+    margin: 6px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-box-shadow: 2px 3px 5px #222;
+            box-shadow: 2px 3px 5px #222;
+    border: 1px solid white;
+    font-family: 'Butterfly Kids', cursive;
+    font-weight: 700;
+  }
+}
+/*# sourceMappingURL=numbers.css.map */
