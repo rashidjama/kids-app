@@ -1,10 +1,6 @@
 //Cache the DOM
 let numbersEl = document.querySelector('.numbers');
 
-
-//Global variables
-let emojis = ['😍','😀','🍎','😎','🧚','🐥','🦕','🐠','🏈','⚽️','⏱','☆','👍','🐒','👏','💪','🕶'];
-
 //generating random motivation words using random index
 let randomWords = _ => {
   let randomIndex = Math.floor(Math.random() * emojis.length)
@@ -20,18 +16,9 @@ let sounds = [
 let numbersAudio = numbersEl.addEventListener('click', event => {
   new Audio(sounds[event.target.textContent]).play()
   if(event.target.classList.contains('number')) {
-    var orgTextContent = event.target.textContent;
-    event.target.innerHTML = randomWords();
-    // event.target.style.paddingTop = '20px';
-    event.target.style.fontSize = '60px';
+    event.target.style.backgroundColor = 'gray';
+    event.target.style.opacity = '0.3';
   }
-      setTimeout(() => {
-        if(event.target.classList.contains('number')) {
-          event.target.textContent = orgTextContent;
-          event.target.style.fontSize = '';
-          event.target.style.paddingTop = '';
-        }
-      }, 1000);
 })
 
 export {
